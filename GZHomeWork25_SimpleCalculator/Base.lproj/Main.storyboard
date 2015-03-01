@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJz-Ux-kgr">
+                                <rect key="frame" x="453" y="517" width="137" height="73"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="="/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resultAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9YA-43-NEO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThB-1c-Zkp">
+                                <rect key="frame" x="453" y="434" width="137" height="73"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="+"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="operationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SMc-c3-DqR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuo-Ye-AXO">
+                                <rect key="frame" x="453" y="351" width="137" height="73"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="-"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="operationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vvw-5d-zoJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsY-oe-oTI">
+                                <rect key="frame" x="453" y="267" width="137" height="74"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="×"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="operationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wJ8-7P-yNZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVq-TK-Xec">
+                                <rect key="frame" x="453" y="184" width="137" height="73"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="÷"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="operationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fga-YO-pYY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzi-yk-gwd">
+                                <rect key="frame" x="305" y="517" width="138" height="73"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="."/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pointAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eet-D1-wrP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWB-gh-uhT">
+                                <rect key="frame" x="305" y="434" width="138" height="73"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numbersAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wzA-CR-APc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpZ-kD-uAd">
+                                <rect key="frame" x="305" y="351" width="138" height="73"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="6"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numbersAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iD8-QP-03S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLB-5U-igK">
+                                <rect key="frame" x="305" y="267" width="138" height="74"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="9"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numbersAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EVl-rA-M3H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdK-MQ-4qb">
+                                <rect key="frame" x="305" y="184" width="138" height="73"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="%"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="percentAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="if0-Do-bIa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2f-nj-hJd">
+                                <rect key="frame" x="158" y="434" width="137" height="73"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="2"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numbersAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Rc-IS-Plv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jws-qc-5A9">
+                                <rect key="frame" x="158" y="351" width="137" height="73"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numbersAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7X-rm-TWl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEG-mO-np9">
+                                <rect key="frame" x="158" y="267" width="137" height="74"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="8"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numbersAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wl1-Gs-219"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfz-kP-it2">
+                                <rect key="frame" x="158" y="184" width="137" height="73"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="±"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="37W-Ea-ZM5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXt-FQ-Zqr">
+                                <rect key="frame" x="10" y="517" width="285" height="73"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numbersAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fQP-YN-S0G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RD4-YY-R6N">
+                                <rect key="frame" x="10" y="351" width="138" height="73"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="4"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numbersAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cQz-e2-zQf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTQ-oH-QDb">
+                                <rect key="frame" x="10" y="184" width="138" height="73"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="С"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cleanAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tk5-Xe-kty"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="clip" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="HaP-z0-eH6">
+                                <rect key="frame" x="10" y="28" width="580" height="146"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al9-xZ-aVp">
+                                <rect key="frame" x="10" y="434" width="138" height="73"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numbersAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m6q-Mv-YUU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GW-SM-KJG">
+                                <rect key="frame" x="10" y="267" width="138" height="74"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="7"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numbersAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G4S-mv-KFY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9GW-SM-KJG" firstAttribute="top" secondItem="MTQ-oH-QDb" secondAttribute="bottom" constant="10" id="0kx-0q-tLU"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="9GW-SM-KJG" secondAttribute="width" id="0mg-kl-hBz"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="uEG-mO-np9" secondAttribute="width" id="1Si-oa-y4M"/>
+                            <constraint firstItem="sfz-kP-it2" firstAttribute="leading" secondItem="MTQ-oH-QDb" secondAttribute="trailing" constant="10" id="1ak-VZ-GYX"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="leading" secondItem="HdK-MQ-4qb" secondAttribute="trailing" constant="10" id="1b8-4v-Pde"/>
+                            <constraint firstItem="EpZ-kD-uAd" firstAttribute="leading" secondItem="jws-qc-5A9" secondAttribute="trailing" constant="10" id="1js-QY-RMz"/>
+                            <constraint firstItem="MTQ-oH-QDb" firstAttribute="top" secondItem="HaP-z0-eH6" secondAttribute="bottom" constant="10" id="2tI-Dz-gMZ"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="sfz-kP-it2" secondAttribute="width" id="2vy-Wa-F7P"/>
+                            <constraint firstItem="EpZ-kD-uAd" firstAttribute="top" secondItem="OLB-5U-igK" secondAttribute="bottom" constant="10" id="3hh-6D-OD3"/>
+                            <constraint firstItem="J2f-nj-hJd" firstAttribute="top" secondItem="jws-qc-5A9" secondAttribute="bottom" constant="10" id="3kt-Jf-QhW"/>
+                            <constraint firstItem="EJz-Ux-kgr" firstAttribute="top" secondItem="ThB-1c-Zkp" secondAttribute="bottom" constant="10" id="3qS-FZ-iaY"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="jws-qc-5A9" secondAttribute="height" id="4x1-5V-DQq"/>
+                            <constraint firstItem="RD4-YY-R6N" firstAttribute="top" secondItem="9GW-SM-KJG" secondAttribute="bottom" constant="10" id="57G-xl-YQM"/>
+                            <constraint firstItem="AsY-oe-oTI" firstAttribute="leading" secondItem="OLB-5U-igK" secondAttribute="trailing" constant="10" id="5iJ-mY-06U"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="top" secondItem="HaP-z0-eH6" secondAttribute="bottom" constant="10" id="7gI-Vg-dNG"/>
+                            <constraint firstItem="HaP-z0-eH6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="8Z5-xO-JH5"/>
+                            <constraint firstItem="9GW-SM-KJG" firstAttribute="top" secondItem="MTQ-oH-QDb" secondAttribute="bottom" constant="10" id="8oc-3a-ouf"/>
+                            <constraint firstItem="uEG-mO-np9" firstAttribute="top" secondItem="sfz-kP-it2" secondAttribute="bottom" constant="10" id="8rh-Ld-Vst"/>
+                            <constraint firstItem="EJz-Ux-kgr" firstAttribute="top" secondItem="ThB-1c-Zkp" secondAttribute="bottom" constant="10" id="915-vt-tih"/>
+                            <constraint firstItem="OLB-5U-igK" firstAttribute="top" secondItem="HdK-MQ-4qb" secondAttribute="bottom" constant="10" id="B8d-Fp-E06"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="al9-xZ-aVp" secondAttribute="height" id="CB4-xH-azT"/>
+                            <constraint firstItem="kuo-Ye-AXO" firstAttribute="leading" secondItem="EpZ-kD-uAd" secondAttribute="trailing" constant="10" id="DT1-0t-GDq"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="OLB-5U-igK" secondAttribute="width" id="Dcz-g8-DTQ"/>
+                            <constraint firstItem="pzi-yk-gwd" firstAttribute="top" secondItem="mWB-gh-uhT" secondAttribute="bottom" constant="10" id="Dn0-e9-ogw"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="RD4-YY-R6N" secondAttribute="width" id="Eq6-Sg-hv0"/>
+                            <constraint firstItem="J2f-nj-hJd" firstAttribute="top" secondItem="jws-qc-5A9" secondAttribute="bottom" constant="10" id="G2P-0u-EaZ"/>
+                            <constraint firstItem="ThB-1c-Zkp" firstAttribute="top" secondItem="kuo-Ye-AXO" secondAttribute="bottom" constant="10" id="GRm-b7-PzY"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="ThB-1c-Zkp" secondAttribute="width" id="GZK-sq-eRT"/>
+                            <constraint firstAttribute="trailing" secondItem="EJz-Ux-kgr" secondAttribute="trailing" constant="10" id="Gs3-U1-pVQ"/>
+                            <constraint firstItem="mWB-gh-uhT" firstAttribute="leading" secondItem="J2f-nj-hJd" secondAttribute="trailing" constant="10" id="H0j-rs-jjw"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="kuo-Ye-AXO" secondAttribute="width" id="HSl-Zu-XQf"/>
+                            <constraint firstItem="MTQ-oH-QDb" firstAttribute="top" secondItem="HaP-z0-eH6" secondAttribute="bottom" constant="10" id="Htj-vI-YuU"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="9GW-SM-KJG" secondAttribute="height" id="IFI-F4-jXT"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="HdK-MQ-4qb" secondAttribute="width" id="INA-LU-9do"/>
+                            <constraint firstItem="sfz-kP-it2" firstAttribute="top" secondItem="HaP-z0-eH6" secondAttribute="bottom" constant="10" id="JEw-X8-ETJ"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="pzi-yk-gwd" secondAttribute="width" id="JsS-bX-0ZP"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="RD4-YY-R6N" secondAttribute="height" id="KQW-kt-Lbl"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="uEG-mO-np9" secondAttribute="height" id="Lio-t9-NDw"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="pzi-yk-gwd" secondAttribute="height" id="MhL-Gt-rgQ"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="HdK-MQ-4qb" secondAttribute="height" id="Nd2-7i-EUy"/>
+                            <constraint firstItem="OLB-5U-igK" firstAttribute="leading" secondItem="uEG-mO-np9" secondAttribute="trailing" constant="10" id="Rcu-OZ-6m8"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="leading" secondItem="HdK-MQ-4qb" secondAttribute="trailing" constant="10" id="RlA-c5-n9w"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="EpZ-kD-uAd" secondAttribute="height" id="Rlp-lx-dVL"/>
+                            <constraint firstAttribute="trailing" secondItem="kuo-Ye-AXO" secondAttribute="trailing" constant="10" id="Sup-Wc-Rsf"/>
+                            <constraint firstItem="jws-qc-5A9" firstAttribute="top" secondItem="uEG-mO-np9" secondAttribute="bottom" constant="10" id="SwG-w1-Lt2"/>
+                            <constraint firstAttribute="trailing" secondItem="HaP-z0-eH6" secondAttribute="trailing" constant="10" id="T0Q-03-pmq"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="ThB-1c-Zkp" secondAttribute="height" id="TKx-5X-Roc"/>
+                            <constraint firstItem="AsY-oe-oTI" firstAttribute="top" secondItem="fVq-TK-Xec" secondAttribute="bottom" constant="10" id="Tqg-xg-3o2"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="AsY-oe-oTI" secondAttribute="width" id="UBW-bI-8gQ"/>
+                            <constraint firstItem="YXt-FQ-Zqr" firstAttribute="top" secondItem="al9-xZ-aVp" secondAttribute="bottom" constant="10" id="Uft-EK-s4e"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="10" id="V12-Nd-Rci"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EJz-Ux-kgr" secondAttribute="bottom" constant="10" id="WgB-cg-oSe"/>
+                            <constraint firstAttribute="trailing" secondItem="AsY-oe-oTI" secondAttribute="trailing" constant="10" id="X9P-9P-afh"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="jws-qc-5A9" secondAttribute="width" id="Xp0-BI-znr"/>
+                            <constraint firstItem="RD4-YY-R6N" firstAttribute="top" secondItem="9GW-SM-KJG" secondAttribute="bottom" constant="10" id="ZXT-61-8pZ"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="mWB-gh-uhT" secondAttribute="width" id="aa5-Wj-ok8"/>
+                            <constraint firstItem="mWB-gh-uhT" firstAttribute="top" secondItem="EpZ-kD-uAd" secondAttribute="bottom" constant="10" id="bL0-WU-VBm"/>
+                            <constraint firstItem="uEG-mO-np9" firstAttribute="leading" secondItem="9GW-SM-KJG" secondAttribute="trailing" constant="10" id="bYG-IB-9fs"/>
+                            <constraint firstItem="uEG-mO-np9" firstAttribute="top" secondItem="sfz-kP-it2" secondAttribute="bottom" constant="10" id="bd2-sA-I9B"/>
+                            <constraint firstItem="J2f-nj-hJd" firstAttribute="leading" secondItem="al9-xZ-aVp" secondAttribute="trailing" constant="10" id="c5j-aW-VaD"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="MTQ-oH-QDb" secondAttribute="width" id="cHT-Zq-SAs"/>
+                            <constraint firstItem="pzi-yk-gwd" firstAttribute="top" secondItem="mWB-gh-uhT" secondAttribute="bottom" constant="10" id="cHv-Mi-j3F"/>
+                            <constraint firstItem="OLB-5U-igK" firstAttribute="top" secondItem="HdK-MQ-4qb" secondAttribute="bottom" constant="10" id="eFG-2Y-BGN"/>
+                            <constraint firstAttribute="trailing" secondItem="ThB-1c-Zkp" secondAttribute="trailing" constant="10" id="eXi-v0-muU"/>
+                            <constraint firstItem="YXt-FQ-Zqr" firstAttribute="top" secondItem="al9-xZ-aVp" secondAttribute="bottom" constant="10" id="fr8-Xl-iHk"/>
+                            <constraint firstItem="kuo-Ye-AXO" firstAttribute="top" secondItem="AsY-oe-oTI" secondAttribute="bottom" constant="10" id="fsP-6u-H3c"/>
+                            <constraint firstItem="al9-xZ-aVp" firstAttribute="top" secondItem="RD4-YY-R6N" secondAttribute="bottom" constant="10" id="g90-ts-sIA"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="EpZ-kD-uAd" secondAttribute="width" id="gBu-ij-anA"/>
+                            <constraint firstItem="al9-xZ-aVp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="gLJ-O3-5W1"/>
+                            <constraint firstItem="HdK-MQ-4qb" firstAttribute="top" secondItem="HaP-z0-eH6" secondAttribute="bottom" constant="10" id="gbw-Kb-XU1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pzi-yk-gwd" secondAttribute="bottom" constant="10" id="ggR-P7-w2i"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="J2f-nj-hJd" secondAttribute="height" id="ggh-is-y1p"/>
+                            <constraint firstItem="mWB-gh-uhT" firstAttribute="top" secondItem="EpZ-kD-uAd" secondAttribute="bottom" constant="10" id="grP-xz-c3R"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="OLB-5U-igK" secondAttribute="height" id="hiE-nj-veZ"/>
+                            <constraint firstItem="EJz-Ux-kgr" firstAttribute="leading" secondItem="pzi-yk-gwd" secondAttribute="trailing" constant="10" id="huu-02-a7e"/>
+                            <constraint firstItem="MTQ-oH-QDb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="iG1-2y-ZEC"/>
+                            <constraint firstItem="kuo-Ye-AXO" firstAttribute="top" secondItem="AsY-oe-oTI" secondAttribute="bottom" constant="10" id="iIR-kM-7XS"/>
+                            <constraint firstItem="YXt-FQ-Zqr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="irr-BY-I3T"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="MTQ-oH-QDb" secondAttribute="height" id="jGo-ah-bx9"/>
+                            <constraint firstItem="HaP-z0-eH6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="jXY-YN-EJs"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="J2f-nj-hJd" secondAttribute="width" id="lEH-oM-7SB"/>
+                            <constraint firstItem="pzi-yk-gwd" firstAttribute="leading" secondItem="YXt-FQ-Zqr" secondAttribute="trailing" constant="10" id="ltP-df-F86"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="top" secondItem="HaP-z0-eH6" secondAttribute="bottom" constant="10" id="lye-KY-wAZ"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="sfz-kP-it2" secondAttribute="height" id="mPD-9h-68P"/>
+                            <constraint firstAttribute="trailing" secondItem="fVq-TK-Xec" secondAttribute="trailing" constant="10" id="mwO-3B-Vo7"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="al9-xZ-aVp" secondAttribute="width" id="n8d-TN-c87"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="AsY-oe-oTI" secondAttribute="height" id="nsb-Hr-3zA"/>
+                            <constraint firstItem="EpZ-kD-uAd" firstAttribute="top" secondItem="OLB-5U-igK" secondAttribute="bottom" constant="10" id="oKc-aw-hGV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YXt-FQ-Zqr" secondAttribute="bottom" constant="10" id="oaI-hW-tHj"/>
+                            <constraint firstItem="HdK-MQ-4qb" firstAttribute="leading" secondItem="sfz-kP-it2" secondAttribute="trailing" constant="10" id="oop-1i-Ghy"/>
+                            <constraint firstItem="9GW-SM-KJG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="pj2-2P-eMo"/>
+                            <constraint firstItem="jws-qc-5A9" firstAttribute="top" secondItem="uEG-mO-np9" secondAttribute="bottom" constant="10" id="ppx-Pj-MEe"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="10" id="psN-d5-lNi"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="YXt-FQ-Zqr" secondAttribute="height" id="qVf-lC-EFg"/>
+                            <constraint firstItem="jws-qc-5A9" firstAttribute="leading" secondItem="RD4-YY-R6N" secondAttribute="trailing" constant="10" id="quO-nP-c7O"/>
+                            <constraint firstItem="al9-xZ-aVp" firstAttribute="top" secondItem="RD4-YY-R6N" secondAttribute="bottom" constant="10" id="rES-W0-5MG"/>
+                            <constraint firstItem="AsY-oe-oTI" firstAttribute="top" secondItem="fVq-TK-Xec" secondAttribute="bottom" constant="10" id="rjT-zc-yzs"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="mWB-gh-uhT" secondAttribute="height" id="tYL-nR-ol6"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="HaP-z0-eH6" secondAttribute="height" multiplier="0.5" id="ufq-rd-3Y4"/>
+                            <constraint firstItem="ThB-1c-Zkp" firstAttribute="leading" secondItem="mWB-gh-uhT" secondAttribute="trailing" constant="10" id="uiu-o1-jH4"/>
+                            <constraint firstItem="RD4-YY-R6N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="vMa-A7-fK4"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="kuo-Ye-AXO" secondAttribute="height" id="xQn-NU-uTp"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="width" secondItem="EJz-Ux-kgr" secondAttribute="width" id="xxd-KD-Lk1"/>
+                            <constraint firstItem="AsY-oe-oTI" firstAttribute="top" secondItem="fVq-TK-Xec" secondAttribute="bottom" constant="10" id="yfj-fw-HWj"/>
+                            <constraint firstItem="fVq-TK-Xec" firstAttribute="height" secondItem="EJz-Ux-kgr" secondAttribute="height" id="ynW-kC-K5x"/>
+                            <constraint firstItem="ThB-1c-Zkp" firstAttribute="top" secondItem="kuo-Ye-AXO" secondAttribute="bottom" constant="10" id="z9I-ml-Zie"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RlA-c5-n9w"/>
+                                <exclude reference="V12-Nd-Rci"/>
+                                <exclude reference="lye-KY-wAZ"/>
+                                <exclude reference="psN-d5-lNi"/>
+                                <exclude reference="yfj-fw-HWj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="calcLabel" destination="HaP-z0-eH6" id="ULh-im-JV9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="326" y="251"/>
+        </scene>
+    </scenes>
+</document>
